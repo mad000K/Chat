@@ -17,3 +17,12 @@ socket.on('new_message', function (message) {
     messages.appendChild(item);
     window.scrollTo(0, document.body.scrollHeight);
 });
+
+function changeNickname() {
+  let nickname = prompt("Enter your nickname:");
+  if (nickname) {
+    socket.emit('set_nickname', nickname);
+  }
+}
+
+changeNickname();
