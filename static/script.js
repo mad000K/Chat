@@ -11,7 +11,7 @@ form.addEventListener('submit', function (e) {
   }
 });
 
-socket.on('new_message', function (message) {
+socket.on('message', function (message) {
     var item = document.createElement('li');
     item.textContent = message;
     messages.appendChild(item);
