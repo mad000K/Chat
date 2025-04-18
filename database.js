@@ -41,3 +41,21 @@ dbWrapper
             console.log(dbError);
         }
     })
+
+module.exports = {
+    getMessages: async () => {
+           try {
+            return await db.all(
+                `SELECT msg_id, content, login, user_id FROM message
+                JOIN user ON message.author = user.user_id`
+            );
+        } catch (dbError) {
+            console.log(dbError);
+        }
+    },
+    addMessage: async (msg, userId) => {
+        await db.run(
+            `INSERT INTO message(content, author) VALUES(?, ?)`, [msg, userId]
+        );
+    },
+} 
