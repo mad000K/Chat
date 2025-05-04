@@ -63,3 +63,41 @@ li {
     font-size: 1.5rem;
     margin: 0.5rem;
 }
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reg{
+    background-color: #304ffe;
+    margin-top: 15%;
+    padding: 25px;
+    width: 50%;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.reg h2,input{
+    color: aliceblue;
+    margin: 5px;
+}
+
+.reg input{
+    width: 80%;
+    height: 30px;
+}
+
+.reg button{
+    background-color: #f69c0d;
+    color: #008f0c;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    border: 0;
+    cursor: pointer;
+}
