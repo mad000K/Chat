@@ -131,3 +131,12 @@ li {
     box-shadow: 0 0 5px 0 grey;
     background-color: var(--color-accent-darker);
 } 
+
+.link {
+    color: var(--color-accent);
+    text-decoration: none;
+    border: none;
+    background: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
